@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.login {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login .singIn-header-title {
+  font-size: 2rem;
+  color: #2A41CB;
+}
+.login .signIn-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 50%;
+  height: 100vh;
+  background-image: url("../../../images/Login.png");
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=styles.css.map */

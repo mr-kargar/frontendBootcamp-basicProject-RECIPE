@@ -1,0 +1,21 @@
+{
+  "name": "frontendbootcamp-basicproject-recipe",
+  "version": "1.0.0",
+  "description": "A website to view and receive recipes ( HTML CSS JS )",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassWatch" : "sass --watch assets/styles/scss:assets/styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-kargar/frontendBootcamp-basicProject-RECIPE.git"
+  },
+  "keywords": [],
+  "author": "AminKargar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mr-kargar/frontendBootcamp-basicProject-RECIPE/issues"
+  },
+  "homepage": "https://github.com/mr-kargar/frontendBootcamp-basicProject-RECIPE#readme"
+}
