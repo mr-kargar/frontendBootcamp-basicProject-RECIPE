@@ -1,0 +1,14 @@
+.button {
+  background-color: $primaryColor;
+  color: $lightColor;
+  border: none;
+  box-shadow: 0 0 16px 2px rgba($primaryColor, 40%);
+  cursor: pointer;
+  
+  &-lg {
+    width: pxToRem(358);
+    height: pxToRem(64);
+    border-radius: pxToRem(16);
+    font-size: pxToRem(20);
+  }
+}

@@ -6,8 +6,25 @@
 
 .container {
   max-width: 1440px;
-  display: flex;
   margin: 0 auto;
+}
+
+.button {
+  background-color: #2A41CB;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 0 16px 2px rgba(42, 65, 203, 0.4);
+  cursor: pointer;
+}
+.button-lg {
+  width: 22.375rem;
+  height: 4rem;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+}
+
+.main {
+  display: flex;
 }
 
 .login {
@@ -18,13 +35,44 @@
   justify-content: center;
   align-items: center;
 }
-.login .singIn-header-title {
+@media screen and (max-width: 750px) {
+  .login {
+    width: 100%;
+  }
+}
+.login .signIn-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.login .signIn-header .singIn-header-title {
   font-size: 2rem;
   color: #2A41CB;
+  margin-bottom: 1rem;
+}
+.login .signIn-header .singIn-header-description {
+  font-size: 0.875rem;
 }
 .login .signIn-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.login .signIn-form input {
+  width: 22.375rem;
+  height: 4rem;
+  background-color: #F5F6F8;
+  border-radius: 1rem;
+  border: none;
+  padding: 1.5rem;
+}
+.login .signIn-form input:focus {
+  border: 2px solid #2A41CB;
+}
+.login .signIn-form #signInEmail {
+  margin-bottom: 1rem;
+}
+.login .signIn-form #signInPassword {
+  margin-bottom: 4.5rem;
 }
 
 .image {
@@ -32,6 +80,11 @@
   height: 100vh;
   background-image: url("../../../images/Login.png");
   object-fit: cover;
+}
+@media screen and (max-width: 750px) {
+  .image {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

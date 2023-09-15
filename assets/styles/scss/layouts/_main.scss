@@ -1,0 +1,68 @@
+.main {
+  display: flex;
+}
+.login {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
+
+  .signIn-header {
+    text-align: center;
+    margin-bottom: pxToRem(16);
+
+    .singIn-header-title {
+      font-size: pxToRem(32);
+      color: $primaryColor;
+      margin-bottom: pxToRem(16);
+    }
+
+    .singIn-header-description {
+      font-size: pxToRem(14);
+    }
+  }
+
+  .signIn-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    input {
+      width: pxToRem(358);
+      height: pxToRem(64);
+      background-color: $backgroundColor;
+      border-radius: pxToRem(16);
+      border: none;
+      padding: pxToRem(24);
+
+      &:focus {
+        border: 2px solid $primaryColor;
+      }
+    }
+
+    #signInEmail {
+      margin-bottom: pxToRem(16);
+    }
+
+    #signInPassword {
+      margin-bottom: pxToRem(72);
+    }
+  }
+}
+
+.image {
+  width: 50%;
+  height: 100vh;
+  background-image: url("../../../images/Login.png");
+  object-fit: cover;
+
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
+}
