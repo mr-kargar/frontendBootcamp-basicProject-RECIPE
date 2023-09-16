@@ -54,12 +54,74 @@
       margin-bottom: pxToRem(72);
     }
   }
+
+  .signUp-header {
+    @extend .signIn-header;
+    display: none;
+
+    &-title {
+      font-size: pxToRem(32);
+      color: $primaryColor;
+      margin-bottom: pxToRem(16);
+    }
+
+    &-description {
+      font-size: pxToRem(14);
+    }
+  }
+
+  .signUp-form {
+    @extend .signIn-form;
+    display: none;
+
+    input {
+      width: pxToRem(358);
+      height: pxToRem(64);
+      background-color: $backgroundColor;
+      border-radius: pxToRem(16);
+      border: none;
+      padding: pxToRem(24);
+
+      &:focus {
+        border: 2px solid $primaryColor;
+      }
+    }
+    .signUp-form-nameContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: pxToRem(16);
+      input {
+        width: pxToRem(171);
+      }
+    }
+
+    #signUnEmail,
+    #signUnPassword,
+    #confirmPassword {
+      margin-bottom: pxToRem(16);
+    }
+
+    .terms {
+      display: flex;
+      width: pxToRem(358);
+      height: pxToRem(32);
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: pxToRem(72);
+
+      input {
+        width: pxToRem(20);
+        height: pxToRem(20);
+        border-radius: 10px;
+      }
+    }
+  }
 }
 
 .image {
   width: 50%;
   height: 100vh;
-  background-image: url("../../../images/Login.png");
+
   object-fit: cover;
 
   @media screen and (max-width: 750px) {
