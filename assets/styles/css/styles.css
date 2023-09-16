@@ -145,8 +145,8 @@
 .login .signUp-form .signUp-form-nameContainer input {
   width: 10.6875rem;
 }
-.login .signUp-form #signUnEmail,
-.login .signUp-form #signUnPassword,
+.login .signUp-form #signUpEmail,
+.login .signUp-form #signUpPassword,
 .login .signUp-form #confirmPassword {
   margin-bottom: 1rem;
 }
@@ -202,6 +202,28 @@
     right: 0;
     top: 0;
   }
+}
+
+.email {
+  position: relative;
+}
+.email-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.password {
+  position: relative;
+}
+.password-show, .password-hidden {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.password-hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

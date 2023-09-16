@@ -86,8 +86,8 @@
       }
     }
 
-    #signUnEmail,
-    #signUnPassword,
+    #signUpEmail,
+    #signUpPassword,
     #confirmPassword {
       margin-bottom: pxToRem(16);
     }
@@ -150,5 +150,31 @@
     position: fixed;
     right: 0;
     top: 0;
+  }
+}
+
+.email {
+  position: relative;
+
+  &-icon {
+    position: absolute;
+    top: pxToRem(16);
+    right: pxToRem(16);
+  }
+}
+
+.password {
+  position: relative;
+
+  &-show {
+    position: absolute;
+    top: pxToRem(16);
+    right: pxToRem(16);
+    cursor: pointer;
+  }
+
+  &-hidden{
+    @extend .password-show;
+    display: none;
   }
 }
