@@ -23,6 +23,7 @@
   height: 4rem;
   border-radius: 1rem;
   font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .toggle-Container {
@@ -48,6 +49,13 @@
 .toggle-Container span {
   z-index: 10;
 }
+.toggle-Container #toggle-login-signIn {
+  font-weight: 600;
+}
+.toggle-Container #toggle-login-signUp {
+  font-weight: 600;
+  color: #848A8D;
+}
 .toggle-Container .toggle-button {
   position: absolute;
   top: 0.25rem;
@@ -70,8 +78,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-top: 6.25rem;
 }
 @media screen and (max-width: 750px) {
   .login {
@@ -86,9 +94,12 @@
   font-size: 2rem;
   color: #2A41CB;
   margin-bottom: 1rem;
+  font-weight: 800;
 }
 .login .signIn-header .singIn-header-description, .login .signUp-header .singIn-header-description {
   font-size: 0.875rem;
+  font-weight: 600;
+  color: #717171;
 }
 .login .signIn-form, .login .signUp-form {
   display: flex;
@@ -104,7 +115,7 @@
   padding: 1.5rem;
 }
 .login .signIn-form input:focus, .login .signUp-form input:focus {
-  border: 2px solid #2A41CB;
+  outline-color: #2A41CB;
 }
 .login .signIn-form #signInEmail, .login .signUp-form #signInEmail {
   margin-bottom: 1rem;
@@ -125,17 +136,6 @@
 }
 .login .signUp-form {
   display: none;
-}
-.login .signUp-form input {
-  width: 22.375rem;
-  height: 4rem;
-  background-color: #F5F6F8;
-  border-radius: 1rem;
-  border: none;
-  padding: 1.5rem;
-}
-.login .signUp-form input:focus {
-  border: 2px solid #2A41CB;
 }
 .login .signUp-form .signUp-form-nameContainer {
   display: flex;
@@ -158,10 +158,32 @@
   align-items: center;
   margin-bottom: 4.5rem;
 }
+.login .signUp-form .terms p {
+  font-size: 0.875rem;
+}
 .login .signUp-form .terms input {
-  width: 1.25rem;
-  height: 1.25rem;
-  border-radius: 10px;
+  display: none;
+  opacity: 0;
+}
+.login .signUp-form .terms input:checked + label {
+  background-color: #ffffff;
+  border: 2px solid #2A41CB;
+}
+.login .signUp-form .terms input:checked + label .terms-description-sign {
+  display: block;
+}
+.login .signUp-form .terms label {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  background-color: #F5F6F8;
+  border-radius: 0.5rem;
+}
+.login .signUp-form .terms label .terms-description-sign {
+  position: absolute;
+  display: none;
+  top: 7px;
+  left: 5px;
 }
 
 .image {
@@ -172,6 +194,13 @@
 @media screen and (max-width: 750px) {
   .image {
     display: none;
+  }
+}
+@media screen and (max-height: 800px) {
+  .image {
+    position: fixed;
+    right: 0;
+    top: 0;
   }
 }
 

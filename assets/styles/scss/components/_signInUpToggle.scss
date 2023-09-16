@@ -1,40 +1,51 @@
-.toggle-Container{
-    margin-bottom: pxToRem(40);
+.toggle-Container {
+  margin-bottom: pxToRem(40);
 
-    input{
-        opacity: 0;
-        display: none;
-    }
-    
-    #toggle-login:checked + label .toggle-button {
-        transform: translateX(177px);
+  input {
+    opacity: 0;
+    display: none;
+  }
+
+  #toggle-login:checked + label .toggle-button {
+    transform: translateX(177px);
+  }
+
+  label {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: pxToRem(358);
+    height: pxToRem(63);
+    background-color: $backgroundColor;
+    border-radius: pxToRem(16);
+  }
+
+  span {
+    z-index: 10;
+  }
+
+  #toggle-login {
+    &-signIn {
+      font-weight: 600;
     }
 
-    label{
-        position: relative;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: pxToRem(358);
-        height: pxToRem(63);
-        background-color: $backgroundColor;
-        border-radius: pxToRem(16);
+    &-signUp {
+      font-weight: 600;
+      color: $tertiaryColor;
     }
+  }
 
-    span{
-        z-index: 10;
-    }
-
-    .toggle-button{
-        position: absolute;
-        top: pxToRem(4);
-        left: pxToRem(4);
-        width: pxToRem(173);
-        height: pxToRem(55);
-        background-color: $lightColor;
-        z-index: 1;
-        box-shadow: 0 0 6px 0 rgba($darkColor, 16%);
-        border-radius: pxToRem(12);
-        transition: transform 0.4s;
-    }
+  .toggle-button {
+    position: absolute;
+    top: pxToRem(4);
+    left: pxToRem(4);
+    width: pxToRem(173);
+    height: pxToRem(55);
+    background-color: $lightColor;
+    z-index: 1;
+    box-shadow: 0 0 6px 0 rgba($darkColor, 16%);
+    border-radius: pxToRem(12);
+    transition: transform 0.4s;
+  }
 }

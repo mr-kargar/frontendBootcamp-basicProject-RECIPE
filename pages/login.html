@@ -25,27 +25,33 @@
                 <div class="toggle-Container">
                     <input type="checkbox" name="toggle-login" id="toggle-login">
                     <label for="toggle-login">
-                        <span>Sign In</span>
-                        <span>Sign Up</span>
+                        <span id="toggle-login-signIn">Sign In</span>
+                        <span Id="toggle-login-signUp">Sign Up</span>
                         <span class="toggle-button"></span>
                     </label>
                 </div>
                 <form class="signIn-form" action="submit" id="signIn-form">
-                    <input type="email" name="signInEmail" id="signInEmail" placeholder="Email Address">
-                    <input type="password" name="signInPassword" id="signInPassword" placeholder="password">
+                    <input type="email" name="signInEmail" id="signInEmail" placeholder="Email Address" required>
+                    <input type="password" name="signInPassword" id="signInPassword" placeholder="password" required>
                     <button class="button button-lg" type="submit">Login</button>
                 </form>
                 <form class="signUp-form" action="submit" id="signUp-form">
                     <div class="signUp-form-nameContainer">
-                        <input type="text" name="firstName" id="firstName" placeholder="First Name">
-                        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
                     </div>
 
-                    <input type="email" name="signInEmail" id="signUnEmail" placeholder="Email Address">
-                    <input type="password" name="signInPassword" id="signUnPassword" placeholder="password">
-                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                    <input type="email" name="signInEmail" id="signUnEmail" placeholder="Email Address" required>
+                    <input type="password" name="signInPassword" id="signUnPassword" placeholder="password" required>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
                     <div class="terms">
                         <input type="checkbox" name="terms-description" id="terms-description">
+                        <label for="terms-description">
+                            <svg class="terms-description-sign" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 6L7 12" stroke="#2A41CB" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M7 12L18 1" stroke="#2A41CB" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                        </label>
                         <p>I agree to the Terms Of Service and Privacy Policy</p>
                     </div>
                     <button class="button button-lg" type="submit">Create account</button>

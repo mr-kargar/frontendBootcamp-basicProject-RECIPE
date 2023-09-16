@@ -6,8 +6,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-top: pxToRem(100);
 
   @media screen and (max-width: 750px) {
     width: 100%;
@@ -21,10 +21,13 @@
       font-size: pxToRem(32);
       color: $primaryColor;
       margin-bottom: pxToRem(16);
+      font-weight: 800;
     }
 
     .singIn-header-description {
       font-size: pxToRem(14);
+      font-weight: 600;
+      color: $secondaryColor;
     }
   }
 
@@ -42,7 +45,7 @@
       padding: pxToRem(24);
 
       &:focus {
-        border: 2px solid $primaryColor;
+        outline-color: $primaryColor;
       }
     }
 
@@ -74,18 +77,6 @@
     @extend .signIn-form;
     display: none;
 
-    input {
-      width: pxToRem(358);
-      height: pxToRem(64);
-      background-color: $backgroundColor;
-      border-radius: pxToRem(16);
-      border: none;
-      padding: pxToRem(24);
-
-      &:focus {
-        border: 2px solid $primaryColor;
-      }
-    }
     .signUp-form-nameContainer {
       display: flex;
       justify-content: space-between;
@@ -109,10 +100,37 @@
       align-items: center;
       margin-bottom: pxToRem(72);
 
+      p {
+        font-size: pxToRem(14);
+      }
+
       input {
-        width: pxToRem(20);
-        height: pxToRem(20);
-        border-radius: 10px;
+        display: none;
+        opacity: 0;
+      }
+
+      input:checked + label {
+        background-color: $lightColor;
+        border: 2px solid $primaryColor;
+      }
+
+      input:checked + label .terms-description-sign {
+        display: block;
+      }
+
+      label {
+        position: relative;
+        width: pxToRem(32);
+        height: pxToRem(32);
+        background-color: $backgroundColor;
+        border-radius: pxToRem(8);
+
+        .terms-description-sign {
+          position: absolute;
+          display: none;
+          top: 7px;
+          left: 5px;
+        }
       }
     }
   }
@@ -126,5 +144,11 @@
 
   @media screen and (max-width: 750px) {
     display: none;
+  }
+
+  @media screen and (max-height: 800px) {
+    position: fixed;
+    right: 0;
+    top: 0;
   }
 }
