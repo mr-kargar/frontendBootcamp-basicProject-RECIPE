@@ -66,27 +66,20 @@ signUpForm.onsubmit = (event) => {
   }
 };
 
-function signIn(email) {
+function signIn() {
+  let forData = new FormData(signInForm);
+
   const xHttp = new XMLHttpRequest();
 
-  xHttp.open("GET", `http://localhost:8080/user-info?email=${email}`);
-  xHttp.setRequestHeader("credentials", "include");
-  xHttp.setRequestHeader("Content-Type", "application/json");
-
-  xHttp.send();
-
-  xHttp.onload = () => {
-    let user = xHttp.response;
-    console.log(user);
-  };
-
+  xHttp.open("POST", `http://127.0.0.1:8080/api/login`);
+  xHttp.withCredentials = true;
+  xHttp.send(forData);
   
 }
 
 signInForm.onsubmit = (event) => {
   event.preventDefault();
-  signIn(signInForm[0].value);
+  signIn();
 };
 
 
-signIn("a@s.com");
