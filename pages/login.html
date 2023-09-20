@@ -8,22 +8,33 @@
     <link rel="stylesheet" href="../assets/styles/css/styles.css">
     <script src="../assets/scripts/signInUpToggle.js" defer></script>
     <script src="../assets/scripts/showpassword.js" defer></script>
-    <script src="../assets/scripts/signUpForm.js" defer></script>
     <title>Login</title>
 </head>
 
 <body>
     <div class="container">
+
+        <!--start content of login page-->
         <div class="main">
+
+            <!--start section of login -->
             <section class="login">
+
+                <!--start title of signIn form-->
                 <div id="signIn-header" class="signIn-header">
                     <p class="singIn-header-title">Welcome Back</p>
                     <p class="singIn-header-description">Please enter your details</p>
                 </div>
+                <!--end title of signIn form-->
+
+                <!--start title of signUp form-->
                 <div id="signUp-header" class="signUp-header">
                     <p class="singIn-header-title">Create New Account</p>
                     <p class="singIn-header-description">Create an account</p>
                 </div>
+                <!--end title of signUp form-->
+
+                <!--start toggle of signIn and signUp form-->
                 <div class="toggle-Container">
                     <input type="checkbox" name="toggle-login" id="toggle-login">
                     <label for="toggle-login">
@@ -32,6 +43,9 @@
                         <span class="toggle-button"></span>
                     </label>
                 </div>
+                <!--end toggle of signIn and signUp form-->
+
+                <!--start signIn form-->
                 <form class="signIn-form" action="submit" id="signIn-form">
                     <div class="email">
                         <input type="email" name="signInEmail" id="signInEmail" placeholder="Email Address" required>
@@ -61,6 +75,9 @@
                     </div>
                     <button class="button button-lg" type="submit">Login</button>
                 </form>
+                <!--end signIn form-->
+
+                <!--start signIn form-->
                 <form class="signUp-form" action="submit" id="signUp-form">
                     <div class="signUp-form-nameContainer">
                         <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
@@ -121,9 +138,17 @@
                     </div>
                     <button class="button button-lg" type="submit">Create account</button>
                 </form>
+                <!--end signIn form-->
+
             </section>
+            <!--end section of login -->
+
+            <!--start image of login page -->
             <img class="image" src="../assets/images/Login.png" alt="login.png">
+            <!--end image of login page -->
+
         </div>
+        <!--end content of login page-->
     </div>
 </body>
 
