@@ -86,68 +86,6 @@
     width: 100%;
   }
 }
-.login .signUp-header {
-  display: none;
-}
-.login .signUp-header-title {
-  font-size: 2rem;
-  color: #2A41CB;
-  margin-bottom: 1rem;
-}
-.login .signUp-header-description {
-  font-size: 0.875rem;
-}
-.login .signUp-form {
-  display: none;
-}
-.login .signUp-form .signUp-form-nameContainer {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-.login .signUp-form .signUp-form-nameContainer input {
-  width: 10.6875rem;
-}
-.login .signUp-form #signUpEmail,
-.login .signUp-form #signUpPassword,
-.login .signUp-form #confirmPassword {
-  margin-bottom: 1rem;
-}
-.login .signUp-form .terms {
-  display: flex;
-  width: 22.375rem;
-  height: 2rem;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 4.5rem;
-}
-.login .signUp-form .terms p {
-  font-size: 0.875rem;
-}
-.login .signUp-form .terms input {
-  display: none;
-  opacity: 0;
-}
-.login .signUp-form .terms input:checked + label {
-  background-color: #ffffff;
-  border: 2px solid #2A41CB;
-}
-.login .signUp-form .terms input:checked + label .terms-description-sign {
-  display: block;
-}
-.login .signUp-form .terms label {
-  position: relative;
-  width: 2rem;
-  height: 2rem;
-  background-color: #F5F6F8;
-  border-radius: 0.5rem;
-}
-.login .signUp-form .terms label .terms-description-sign {
-  position: absolute;
-  display: none;
-  top: 7px;
-  left: 5px;
-}
 
 .image {
   width: 50%;
@@ -189,28 +127,28 @@
   display: none;
 }
 
-.signIn-header, .login .signUp-header {
+.signIn-header, .signUp-header {
   text-align: center;
   margin-bottom: 1rem;
 }
-.signIn-header .singIn-header-title, .login .signUp-header .singIn-header-title {
+.signIn-header .singIn-header-title, .signUp-header .singIn-header-title {
   font-size: 2rem;
   color: #2A41CB;
   margin-bottom: 1rem;
   font-weight: 800;
 }
-.signIn-header .singIn-header-description, .login .signUp-header .singIn-header-description {
+.signIn-header .singIn-header-description, .signUp-header .singIn-header-description {
   font-size: 0.875rem;
   font-weight: 600;
   color: #717171;
 }
 
-.signIn-form, .login .signUp-form {
+.signIn-form, .signUp-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.signIn-form input, .login .signUp-form input {
+.signIn-form input, .signUp-form input {
   width: 22.375rem;
   height: 4rem;
   background-color: #F5F6F8;
@@ -218,14 +156,78 @@
   border: none;
   padding: 1.5rem;
 }
-.signIn-form input:focus, .login .signUp-form input:focus {
+.signIn-form input:focus, .signUp-form input:focus {
   outline-color: #2A41CB;
 }
-.signIn-form #signInEmail, .login .signUp-form #signInEmail {
+.signIn-form #signInEmail, .signUp-form #signInEmail {
   margin-bottom: 1rem;
 }
-.signIn-form #signInPassword, .login .signUp-form #signInPassword {
+.signIn-form #signInPassword, .signUp-form #signInPassword {
   margin-bottom: 4.5rem;
+}
+
+.signUp-header {
+  display: none;
+}
+.signUp-header-title {
+  font-size: 2rem;
+  color: #2A41CB;
+  margin-bottom: 1rem;
+}
+.signUp-header-description {
+  font-size: 0.875rem;
+}
+
+.signUp-form {
+  display: none;
+}
+.signUp-form .signUp-form-nameContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.signUp-form .signUp-form-nameContainer input {
+  width: 10.6875rem;
+}
+.signUp-form #signUpEmail,
+.signUp-form #signUpPassword,
+.signUp-form #confirmPassword {
+  margin-bottom: 1rem;
+}
+.signUp-form .terms {
+  display: flex;
+  width: 22.375rem;
+  height: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.5rem;
+}
+.signUp-form .terms p {
+  font-size: 0.875rem;
+}
+.signUp-form .terms input {
+  display: none;
+  opacity: 0;
+}
+.signUp-form .terms input:checked + label {
+  background-color: #ffffff;
+  border: 2px solid #2A41CB;
+}
+.signUp-form .terms input:checked + label .terms-description-sign {
+  display: block;
+}
+.signUp-form .terms label {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  background-color: #F5F6F8;
+  border-radius: 0.5rem;
+}
+.signUp-form .terms label .terms-description-sign {
+  position: absolute;
+  display: none;
+  top: 7px;
+  left: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
