@@ -86,43 +86,6 @@
     width: 100%;
   }
 }
-.login .signIn-header, .login .signUp-header {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.login .signIn-header .singIn-header-title, .login .signUp-header .singIn-header-title {
-  font-size: 2rem;
-  color: #2A41CB;
-  margin-bottom: 1rem;
-  font-weight: 800;
-}
-.login .signIn-header .singIn-header-description, .login .signUp-header .singIn-header-description {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #717171;
-}
-.login .signIn-form, .login .signUp-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.login .signIn-form input, .login .signUp-form input {
-  width: 22.375rem;
-  height: 4rem;
-  background-color: #F5F6F8;
-  border-radius: 1rem;
-  border: none;
-  padding: 1.5rem;
-}
-.login .signIn-form input:focus, .login .signUp-form input:focus {
-  outline-color: #2A41CB;
-}
-.login .signIn-form #signInEmail, .login .signUp-form #signInEmail {
-  margin-bottom: 1rem;
-}
-.login .signIn-form #signInPassword, .login .signUp-form #signInPassword {
-  margin-bottom: 4.5rem;
-}
 .login .signUp-header {
   display: none;
 }
@@ -224,6 +187,45 @@
 }
 .password-hidden {
   display: none;
+}
+
+.signIn-header, .login .signUp-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.signIn-header .singIn-header-title, .login .signUp-header .singIn-header-title {
+  font-size: 2rem;
+  color: #2A41CB;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+.signIn-header .singIn-header-description, .login .signUp-header .singIn-header-description {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #717171;
+}
+
+.signIn-form, .login .signUp-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.signIn-form input, .login .signUp-form input {
+  width: 22.375rem;
+  height: 4rem;
+  background-color: #F5F6F8;
+  border-radius: 1rem;
+  border: none;
+  padding: 1.5rem;
+}
+.signIn-form input:focus, .login .signUp-form input:focus {
+  outline-color: #2A41CB;
+}
+.signIn-form #signInEmail, .login .signUp-form #signInEmail {
+  margin-bottom: 1rem;
+}
+.signIn-form #signInPassword, .login .signUp-form #signInPassword {
+  margin-bottom: 4.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -13,50 +13,7 @@
     width: 100%;
   }
 
-  .signIn-header {
-    text-align: center;
-    margin-bottom: pxToRem(16);
-
-    .singIn-header-title {
-      font-size: pxToRem(32);
-      color: $primaryColor;
-      margin-bottom: pxToRem(16);
-      font-weight: 800;
-    }
-
-    .singIn-header-description {
-      font-size: pxToRem(14);
-      font-weight: 600;
-      color: $secondaryColor;
-    }
-  }
-
-  .signIn-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    input {
-      width: pxToRem(358);
-      height: pxToRem(64);
-      background-color: $backgroundColor;
-      border-radius: pxToRem(16);
-      border: none;
-      padding: pxToRem(24);
-
-      &:focus {
-        outline-color: $primaryColor;
-      }
-    }
-
-    #signInEmail {
-      margin-bottom: pxToRem(16);
-    }
-
-    #signInPassword {
-      margin-bottom: pxToRem(72);
-    }
-  }
+  
 
   .signUp-header {
     @extend .signIn-header;
@@ -173,7 +130,7 @@
     cursor: pointer;
   }
 
-  &-hidden{
+  &-hidden {
     @extend .password-show;
     display: none;
   }
