@@ -2,6 +2,7 @@ const passwordShow = document.getElementById("password-show");
 const passwordHidden = document.getElementById("password-hidden");
 const signInPassword = document.getElementById("signInPassword");
 
+
 passwordShow.onclick = () => {
   signInPassword.type = "text";
   passwordShow.style.display = "none";

@@ -28,6 +28,7 @@
     border-radius: pxToRem(16);
     border: none;
     padding: pxToRem(24);
+    
 
     &:focus {
       outline-color: $primaryColor;

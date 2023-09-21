@@ -74,6 +74,8 @@ function signIn() {
   xHttp.open("POST", `http://127.0.0.1:8080/api/login`);
   xHttp.withCredentials = true;
   xHttp.send(forData);
+
+  location.replace("http://127.0.0.1:5500/pages/dashboard.html");
   
 }
 

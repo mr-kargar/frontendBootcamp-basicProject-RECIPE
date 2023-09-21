@@ -263,4 +263,47 @@
   color: #848A8D;
 }
 
+.addRecipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7.9375rem;
+}
+.addRecipe h1 {
+  margin-bottom: 3.5625rem;
+}
+.addRecipe-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35.625rem;
+}
+.addRecipe-form input {
+  width: 100%;
+  height: 4rem;
+  background-color: #F5F6F8;
+  border-radius: 1rem;
+  border: none;
+  padding: 1.5rem;
+  margin-bottom: 2.875rem;
+}
+.addRecipe-form input:focus {
+  outline-color: #2A41CB;
+}
+.addRecipe-form textarea {
+  width: 100%;
+  height: 4rem;
+  background-color: #F5F6F8;
+  border-radius: 1rem;
+  border: none;
+  padding: 1.5rem;
+  margin-bottom: 2.875rem;
+}
+.addRecipe-form textarea:focus {
+  outline-color: #2A41CB;
+}
+.addRecipe-form button {
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */

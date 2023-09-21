@@ -1,0 +1,49 @@
+.addRecipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: pxToRem(127);
+
+  h1 {
+    margin-bottom: pxToRem(57);
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: pxToRem(570);
+
+    input {
+      width: 100%;
+      height: pxToRem(64);
+      background-color: $backgroundColor;
+      border-radius: pxToRem(16);
+      border: none;
+      padding: pxToRem(24);
+      margin-bottom: pxToRem(46);
+
+      &:focus {
+        outline-color: $primaryColor;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: pxToRem(64);
+      background-color: $backgroundColor;
+      border-radius: pxToRem(16);
+      border: none;
+      padding: pxToRem(24);
+      margin-bottom: pxToRem(46);
+
+      &:focus {
+        outline-color: $primaryColor;
+      }
+    }
+
+    button{
+      width: 100%;
+    }
+  }
+}
