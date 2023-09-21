@@ -270,6 +270,9 @@
   margin-top: 7.9375rem;
 }
 .addRecipe h1 {
+  color: #2A41CB;
+  font-size: 3rem;
+  font-weight: 800;
   margin-bottom: 3.5625rem;
 }
 .addRecipe-form {
@@ -294,6 +297,7 @@
   width: 100%;
   height: 4rem;
   background-color: #F5F6F8;
+  color: #848A8D;
   border-radius: 1rem;
   border: none;
   padding: 1.5rem;
