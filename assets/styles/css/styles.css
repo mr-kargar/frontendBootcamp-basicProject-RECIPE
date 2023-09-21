@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  list-style: none;
 }
 
 .container {
@@ -105,28 +106,6 @@
   }
 }
 
-.email {
-  position: relative;
-}
-.email-icon {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-
-.password {
-  position: relative;
-}
-.password-show, .password-hidden {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  cursor: pointer;
-}
-.password-hidden {
-  display: none;
-}
-
 .signIn-header, .signUp-header {
   text-align: center;
   margin-bottom: 1rem;
@@ -164,6 +143,28 @@
 }
 .signIn-form #signInPassword, .signUp-form #signInPassword {
   margin-bottom: 4.5rem;
+}
+
+.email {
+  position: relative;
+}
+.email-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.password {
+  position: relative;
+}
+.password-show, .password-hidden {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.password-hidden {
+  display: none;
 }
 
 .signUp-header {
@@ -228,6 +229,38 @@
   display: none;
   top: 7px;
   left: 5px;
+}
+
+.email {
+  position: relative;
+}
+.email-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.password {
+  position: relative;
+}
+.password-show, .password-hidden {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.password-hidden {
+  display: none;
+}
+
+.content h1 {
+  color: #2A41CB;
+  padding: 50px 0;
+}
+.content ul {
+  display: flex;
+  gap: 10px;
+  color: #848A8D;
 }
 
 /*# sourceMappingURL=styles.css.map */

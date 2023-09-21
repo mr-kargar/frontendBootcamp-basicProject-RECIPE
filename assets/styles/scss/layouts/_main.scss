@@ -30,29 +30,3 @@
     top: 0;
   }
 }
-
-.email {
-  position: relative;
-
-  &-icon {
-    position: absolute;
-    top: pxToRem(16);
-    right: pxToRem(16);
-  }
-}
-
-.password {
-  position: relative;
-
-  &-show {
-    position: absolute;
-    top: pxToRem(16);
-    right: pxToRem(16);
-    cursor: pointer;
-  }
-
-  &-hidden {
-    @extend .password-show;
-    display: none;
-  }
-}
