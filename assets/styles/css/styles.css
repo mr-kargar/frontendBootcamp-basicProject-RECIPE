@@ -26,6 +26,13 @@
   font-size: 1.25rem;
   font-weight: 500;
 }
+.button-sm {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
 
 .toggle-Container {
   margin-bottom: 2.5rem;
@@ -253,6 +260,9 @@
   display: none;
 }
 
+.content {
+  width: 70%;
+}
 .content h1 {
   color: #2A41CB;
   padding: 50px 0;
@@ -261,6 +271,11 @@
   display: flex;
   gap: 10px;
   color: #848A8D;
+}
+.content .category {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .addRecipe {

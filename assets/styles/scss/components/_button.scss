@@ -12,4 +12,12 @@
     font-size: pxToRem(20);
     font-weight: 500;
   }
+
+  &-sm{
+    width: pxToRem(40);
+    height: pxToRem(40);
+    border-radius: pxToRem(6);
+    font-size: pxToRem(20);
+    font-weight: 500;
+  }
 }
